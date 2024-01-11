@@ -27,9 +27,9 @@ After a VM reboot, it is possible that Kubernetes cluster to be no longer availa
 
 In order to fix it, run the following commands, starting as kubernetes admin user:
 
-        - sudo -i
-        - swapoff -a
-        - exit
-        - strace -eopenat kubectl version
+    - sudo -i
+    - swapoff -a
+    - exit
+    - strace -eopenat kubectl version
    
 To check if the Kubernetes cluster is now available, run "kubectl get nodes".
